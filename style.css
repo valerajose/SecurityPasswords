@@ -73,6 +73,7 @@ body{
     color: #43A047;
 }
 
+/* creo que nada de esto tiene sentido aqui */
 .wrapper .pass-indicator{
     width:100%;
     height:4px;
@@ -82,7 +83,9 @@ body{
     /* esto creo que no tiene sentido en este elemento */
     border-radius:25px;
     /* esto creo que no tiene sentido en este elemento fin */
-}
+} 
+/* creo que nada de esto tiene sentido aqui fin */
+
 
 .pass-indicator::before{
     position:absolute;
@@ -140,16 +143,37 @@ body{
     width: calc(100% / 2);
 }
 
-.options :first-child{
-
+.options .option:first-child{
      pointer-events:none; 
-     opacity:0.7;
 }
 
-/* .options :first-child input{
-
+.options :first-child input{
     opacity:0.7;
+}
 
-} */
+.options .option input{
+    height:16px;
+    width:16px;
+    cursor:pointer; 
+}
 
+.options .option label{
+    cursor: pointer;
+    color: #4f4f4f;
+    padding-left: 0.63rem;
+}
+
+
+.wrapper .generate-btn{
+    width: 100%;
+    color: #fff;
+    border:none;
+    outline: none;
+    cursor:pointer;
+    background: #43A047;
+    font-size:1.06rem;
+    border-radius:5px;
+    text-transform:uppercase;
+    margin: 0.94rem 0 1.3rem;
+}
 
